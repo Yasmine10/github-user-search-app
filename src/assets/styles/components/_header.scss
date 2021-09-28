@@ -1,0 +1,36 @@
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .color-switch {
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        .icon {
+            margin-left: 1em;
+            path {
+                fill: var(--clr-txt);
+            }
+            g {
+                fill: var(--clr-txt);
+            }
+        }
+    }   
+
+    &:hover {
+        color: var(--clr-header);
+
+        .icon {
+            path {
+                fill: var(--clr-header);
+            }
+            g {
+                fill: var(--clr-header);
+            }
+        }
+    }
+   
+}

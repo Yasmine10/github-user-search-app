@@ -1,4 +1,6 @@
 import "./App.scss";
+
+import "./assets/styles/main.scss";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import Content from "./components/Content";
