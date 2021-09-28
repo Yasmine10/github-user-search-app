@@ -5,7 +5,7 @@ import { ReactComponent as MoonIcon } from "../assets/images/icon-moon.svg";
 
 export default function Header() {
     return (
-        <div>
+        <>
             <div id="header" className="container">
                 <h1>devfinder</h1>
                 <div className="color-switch">
@@ -13,6 +13,6 @@ export default function Header() {
                     <MoonIcon className="icon"/>
                 </div>
             </div>
-        </div>
+        </>
     );
 }

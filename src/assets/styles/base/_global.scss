@@ -37,12 +37,15 @@ h4 {
 }
 
 button {
+    font-family: var(--ff-primary);
     font-weight: var(--fw-bold);
-    font-size: var(--fs-normal);
+    font-size: var(--fs-btn);
 
     color: var(--clr-secondary);
     background-color: var(--clr-primary);
     border-radius: 0.625em;    
+    padding: 1em 1.5em;
+    border: none;
 
     &:hover {
         background-color: var(--clr-primary-light);
