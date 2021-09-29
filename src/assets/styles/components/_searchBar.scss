@@ -3,6 +3,8 @@
     justify-content: space-between;
     align-items: center;
 
+    margin-bottom: 1.5em;
+
     background: var(--clr-bg-lighter);
     padding: .5em;
     border-radius: 0.938em;
@@ -10,7 +12,7 @@
 
     .icon {
         margin-left: 0.5em;
-        transform: scale(0.85);     
+        transform: scale(0.85);  
     } 
 
     .icon, button {
@@ -22,13 +24,18 @@
 
         border: none;
         font-family: var(--ff-primary);
+        font-size: var(--fs-body);
         margin-left: 0.5em;
         margin-right: 0.5em;
+
+        background-color: var(--clr-bg-lighter);
+        color: var(--clr-txt);
 
         &:focus {
             outline: none;
             caret-color: var(--clr-primary);
         }
-    }
 
+        
+    }
 }

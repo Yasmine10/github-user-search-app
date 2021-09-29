@@ -1,11 +1,14 @@
+html {
+    background-color: var(--clr-bg);
+}
+
 body {
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     font-weight: var(--fw-regular);
     line-height: 1.563em;
+    // background-color: var(--clr-bg);
     color: var(--clr-txt);
-
-    background-color: var(--clr-bg);
 }
 
 h1 {    
@@ -34,6 +37,18 @@ h4 {
     font-size: var(--fs-small);
     line-height: 1.25em;
     color: var(--clr-txt);
+}
+
+p {
+    color: var(--clr-txt);
+}
+
+input {
+    color: var(--clr-txt);
+
+    &::placeholder {
+        color: var(--clr-txt);
+    }
 }
 
 button {

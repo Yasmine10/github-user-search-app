@@ -4,6 +4,9 @@
     justify-content: space-between;
     align-items: center;
 
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+
     h1 {
         font-size: var(--fs-devfinder);
     }
@@ -15,6 +18,13 @@
 
         text-transform: uppercase;
         font-weight: var(--fw-bold);
+
+
+        span {
+            color: var(--clr-txt);
+        }
+
+        
 
         .icon {
             margin-left: 1em;
@@ -28,7 +38,9 @@
     }   
 
     &:hover {
-        color: var(--clr-header);
+        span {
+            color: var(--clr-header);
+        }
 
         .icon {
             path {
