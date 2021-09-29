@@ -18,12 +18,12 @@
             img {
                 max-width: 25%;
                 border-radius: 50%;
-                // flex-shrink: 0 0;
             }
 
-            > div {
-                // flex-grow: 0 auto;
-            }
+            // div {
+            //     flex-basis: 70%;
+            //     flex-shrink: 1 auto;
+            // }
 
             .profile-name {
                 h1 {
@@ -50,6 +50,10 @@
         justify-content: space-evenly;
 
         text-align: center;
+
+        @media only screen and (min-width: 768px) {
+            text-align: start;
+        }
 
         .repos,
         .followers,

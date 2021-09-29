@@ -10,12 +10,9 @@ function App() {
   const [darkMode, setDarkMode] = useState(true);
   const toggleDarkMode = () => setDarkMode(!darkMode);
 
-  console.log(darkMode);
-
   const [searchValue, setSearchValue] = useState("");
 
   const handleSearchCallback = (searchValue) => {
-    console.log(searchValue);
     setSearchValue(searchValue);
   }
 
