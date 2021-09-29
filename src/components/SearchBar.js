@@ -1,9 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 import { ReactComponent as SearchIcon } from "../assets/images/icon-search.svg";
 
 export default function SearchBar(props) {
+
+    const [errorMessage, setErrorMessage] = useState(false)
 
     let callback = props.parentCallback;
 
@@ -13,6 +15,8 @@ export default function SearchBar(props) {
 
     const getRequest = (props) => {
         const apiUrl = "https://api.github.com/users/";
+
+        setErrorMessage(false);
         
         axios.get(apiUrl + props.user, {
             header: {
@@ -21,12 +25,14 @@ export default function SearchBar(props) {
             .then((response) => {
             console.log(response);
             callback(response.data);
-        })
+            })
+            .catch((error) => {
+                setErrorMessage(true);
+            })
     }
 
     const onTrigger = (event) => {
         event.preventDefault();
-
         getRequest({user: event.target.searchValue.value});
     }
 
@@ -35,6 +41,7 @@ export default function SearchBar(props) {
             <form id="search-bar" className="container" onSubmit={onTrigger}>
                 <SearchIcon className="icon" />
                 <input type="text" name="searchValue" placeholder="Search GitHub username&hellip;" />
+                { errorMessage ? <p className="error">No results</p> : <p></p>}
                 <button type="submit">Search</button>
             </form>
         </>
