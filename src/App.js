@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 
 import "./assets/styles/main.scss";
-import "./App.scss";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
 import Content from "./components/Content";
@@ -21,7 +20,7 @@ function App() {
   }
 
   return (
-    <div className={`App ${darkMode ? "dark" : "light"}`}>
+    <div className={`${darkMode ? "dark" : "light"}`}>
       <Header darkMode={darkMode} onClick={toggleDarkMode} />
       <SearchBar parentCallback={handleSearchCallback} />
       <Content user={searchValue} />

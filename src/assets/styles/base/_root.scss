@@ -6,10 +6,7 @@
     --clr-primary-light: hsl(212, 100%, 69%);
     --clr-secondary: hsl(0, 0%, 100%);
 
-    // --clr-bg: hsl(228, 100%, 98%);
-    // --clr-bg-lighter: hsl(0, 0%, 100%);
-    // --clr-txt: hsl(217, 35%, 45%);
-    // --clr-header: hsl(217, 21%, 21%);
+    // --selected-clr-bg: var(--clr-bg);
 
     // font variables
     --ff-primary: "Space Mono", monospace;
@@ -37,17 +34,3 @@
     }
 }
 
-[data-theme="light"] {
-    --clr-bg: hsl(228, 100%, 98%);
-    --clr-bg-lighter: hsl(0, 0%, 100%);
-    --clr-txt: hsl(217, 35%, 45%);
-    --clr-header: hsl(217, 21%, 21%);
-}
-
-
-[data-theme="dark"] {
-    --clr-bg: hsl(220, 40%, 13%);
-    --clr-bg-lighter: hsl(222, 41%, 20%);
-    --clr-txt: hsl(0, 0%, 100%);
-    --clr-header: hsl(0, 0%, 100%);    
-}
