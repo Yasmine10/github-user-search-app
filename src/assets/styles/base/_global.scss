@@ -1,0 +1,82 @@
+html {
+    background-color: var(--clr-bg);
+}
+
+body {
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    font-weight: var(--fw-regular);
+    line-height: 1.563em;
+    // background-color: var(--clr-bg);
+    color: var(--clr-txt);
+}
+
+h1 {    
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-large);
+    line-height: 2.375em;
+    color: var(--clr-header);
+}
+
+h2 {
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-medium);
+    line-height: 2.063em;
+    color: var(--clr-header);
+}
+
+h3 {
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-normal);
+    line-height: 1.5em;
+    color: var(--clr-primary);
+}
+
+h4 {
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-small);
+    line-height: 1.25em;
+    color: var(--clr-txt);
+}
+
+p {
+    color: var(--clr-txt);
+}
+
+input {
+    color: var(--clr-txt);
+
+    &::placeholder {
+        color: var(--clr-txt);
+    }
+}
+
+button {
+    font-family: var(--ff-primary);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-btn);
+
+    color: var(--clr-secondary);
+    background-color: var(--clr-primary);
+    border-radius: 0.625em;    
+    padding: 1em 1.5em;
+    border: none;
+
+    &:hover {
+        background-color: var(--clr-primary-light);
+    }
+}
+
+a {
+    line-height: 1.389em;
+    color: var(--clr-txt);
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    // &:disabled {
+
+    // }
+}

@@ -1,23 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+
+import "./assets/styles/main.scss";
+import "./App.scss";
+import Header from "./components/Header";
+import SearchBar from "./components/SearchBar";
+import Content from "./components/Content";
 
 function App() {
+
+  const [darkMode, setDarkMode] = useState(false);
+  const toggleDarkMode = () => setDarkMode(!darkMode);
+
+  console.log(darkMode);
+
+  const [searchValue, setSearchValue] = useState("");
+
+  const handleSearchCallback = (searchValue) => {
+    console.log(searchValue);
+    setSearchValue(searchValue);
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${darkMode ? "dark" : "light"}`}>
+      <Header darkMode={darkMode} onClick={toggleDarkMode} />
+      <SearchBar parentCallback={handleSearchCallback} />
+      <Content user={searchValue} />
     </div>
   );
 }

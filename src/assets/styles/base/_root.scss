@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+:root {
+    // colors
+    --clr-primary: hsl(212, 100%, 50%);
+    --clr-primary-light: hsl(212, 100%, 69%);
+    --clr-secondary: hsl(0, 0%, 100%);
+
+    // --clr-bg: hsl(228, 100%, 98%);
+    // --clr-bg-lighter: hsl(0, 0%, 100%);
+    // --clr-txt: hsl(217, 35%, 45%);
+    // --clr-header: hsl(217, 21%, 21%);
+
+    // font variables
+    --ff-primary: "Space Mono", monospace;
+
+    --fw-regular: 400;
+    --fw-bold: 700;
+
+    --fs-large: 16px; // 16px
+    --fs-medium: 16px; // 16px
+    --fs-normal: 13px; // 13px
+    --fs-small: 11px; // 11px
+
+    --fs-devfinder: 26px; // 26px
+    --fs-body: 13px; // 13px
+    --fs-btn: 14px; // 14px
+
+    @media only screen and (min-width: 768px) {
+        --fs-large: 1.625em; // 26px
+        --fs-medium: 1.375em; // 22px
+        --fs-normal: 1em; // 16px
+        --fs-small: 0.813em; // 13px
+
+        --fs-body: 0.938em; // 15px
+        --fs-btn: 1em; // 16px
+    }
+}
+
+[data-theme="light"] {
+    --clr-bg: hsl(228, 100%, 98%);
+    --clr-bg-lighter: hsl(0, 0%, 100%);
+    --clr-txt: hsl(217, 35%, 45%);
+    --clr-header: hsl(217, 21%, 21%);
+}
+
+
+[data-theme="dark"] {
+    --clr-bg: hsl(220, 40%, 13%);
+    --clr-bg-lighter: hsl(222, 41%, 20%);
+    --clr-txt: hsl(0, 0%, 100%);
+    --clr-header: hsl(0, 0%, 100%);    
+}
