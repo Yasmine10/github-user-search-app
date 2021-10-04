@@ -36,6 +36,8 @@
             }
         }
 
+        // @media only screen and (min-width:)
+
         .profile-bio {
             margin-top: 1.5em;
         }
@@ -69,8 +71,6 @@
     }
 
     .links {
-        
-
         .link {
             display: flex;
             justify-content: flex-start;
@@ -81,7 +81,8 @@
                 // flex-shrink: 0 auto;
                 width: 2rem;
 
-                g, path {
+                g,
+                path {
                     fill: var(--clr-txt);
                 }
             }
@@ -102,7 +103,6 @@
             flex-wrap: wrap;
             // gap: 2em;
             height: 6rem;
-
 
             .link {
                 flex-basis: 50%;

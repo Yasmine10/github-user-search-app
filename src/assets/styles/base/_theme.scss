@@ -7,12 +7,14 @@
     background-color: var(--clr-bg);
     height: 100vh;
 
+    transition: background-color 1000ms linear;
+
     #header {
         .color-switch:hover {
             span {
                 color: var(--clr-header);
             }
-    
+
             .icon {
                 path {
                     fill: var(--clr-header);
@@ -21,26 +23,27 @@
                     fill: var(--clr-header);
                 }
             }
-        }   
+        }
     }
 }
-
 
 .dark {
     --clr-bg: hsl(220, 40%, 13%);
     --clr-bg-lighter: hsl(222, 41%, 20%);
     --clr-txt: hsl(0, 0%, 100%);
-    --clr-header: hsl(0, 0%, 100%);  
+    --clr-header: hsl(0, 0%, 100%);
 
     background-color: var(--clr-bg);
     height: 100vh;
+
+    transition: background-color 500ms linear;
 
     #header {
         .color-switch:hover {
             span {
                 color: hsl(222, 44%, 70%);
             }
-    
+
             .icon {
                 path {
                     fill: hsl(222, 44%, 70%);
@@ -49,10 +52,11 @@
                     fill: hsl(222, 44%, 70%);
                 }
             }
-        }   
+        }
     }
 
-    #search-bar, #content {
+    #search-bar,
+    #content {
         box-shadow: none;
     }
 }

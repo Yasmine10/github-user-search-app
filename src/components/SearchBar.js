@@ -23,8 +23,8 @@ export default function SearchBar(props) {
                 'accept': 'application/vnd.github.v3+json'
             }})
             .then((response) => {
-            console.log(response);
-            callback(response.data);
+                callback(response.data);
+                
             })
             .catch((error) => {
                 setErrorMessage(true);
