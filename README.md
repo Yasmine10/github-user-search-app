@@ -34,6 +34,8 @@ Users should be able to:
 -   Solution URL: [https://github.com/Yasmine10/github-user-search-app](https://github.com/Yasmine10/github-user-search-app)
 -   Live Site URL: [https://github-user-search-app-10.herokuapp.com/](https://github-user-search-app-10.herokuapp.com/)
 
+**Note: It might take a minute to load the live site.**
+
 ## My process
 
 ### Built with
